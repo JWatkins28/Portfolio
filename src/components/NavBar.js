@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import { Disclosure } from '@headlessui/react'
+import { GiCastle, GiCrestedHelmet, GiDrippingSword, GiDragonBalls, GiEgyptianTemple } from 'react-icons/gi'
 
 export default function NavBar({ currentPage, pageChanger }) {
+
+    // const iconClasses = 'className="h-8 w-auto absolute text-white"'
+    // const icons = [<GiCastle iconClasses />, <GiCrestedHelmet iconClasses />, <GiDrippingSword iconClasses />, <GiDragonBalls iconClasses />, <GiEgyptianTemple iconClasses />]
+
+    // const iconChooser = () => {
+    //   return icons[Math.floor(Math.random() * icons.length)]
+    // }
 
     const navigation = [
         { name: 'About Me', page: 'About', href: '#about'},
@@ -10,31 +18,25 @@ export default function NavBar({ currentPage, pageChanger }) {
         { name: 'Contact', page: 'Contact',  href: '#contact'},
       ]
       
-      function classNames(...classes) {
-        return classes.filter(Boolean).join(' ')
-      }
+      const classNames = (...classes) => { return classes.filter(Boolean).join(' ') }
 
   return (
-    <Disclosure as="nav" className="bg-black">
+    <Disclosure as="nav" className="bg-black relative">
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 z-2">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 z-10">
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                     {/* LOGO (Change to something more personalized) */}
-                  <img
-                    className="h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Justin Watkins"
-                  />
+                  <GiCastle className="h-8 w-auto absolute text-white" />
 
-                  <h2 className="text-white ml-5 absolute">Justin Watkins</h2>
+                  <h2 className="text-white ml-10 absolute ">Justin Watkins</h2>
                 </div>
                 <div className="sm:block m-auto">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
-                        key={item.name}
+                        key={item.page}
                         href={item.href}
                         onClick={() => pageChanger(item.page)}
                         className={classNames(
@@ -55,7 +57,7 @@ export default function NavBar({ currentPage, pageChanger }) {
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
                 <Disclosure.Button
-                  key={item.name}
+                  key={item.page}
                   as="a"
                   href={item.href}
                   onClick={() => pageChanger(item.page)}

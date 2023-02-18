@@ -1,10 +1,11 @@
 import React from 'react';
+import bootstrap from 'bootstrap'
 
 export default function Contact() {
 
 
     return (
-        <div className="h-screen bg-pattern-light">
+        <div>
             <h2>Contact</h2>
         </div>
     )
