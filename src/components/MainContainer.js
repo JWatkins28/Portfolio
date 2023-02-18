@@ -23,10 +23,18 @@ export default function MainContainer() {
 
     const pageChanger = (page) => setCurrentPage(page)
 
+    const styles = {
+        main: {
+            minHeight: '90vh',
+        }
+    }
+
     return (
-        <div>
+        <div className="relative">
             <NavBar currentPage={currentPage} pageChanger={pageChanger} />
-            {renderPage()}
+            <div style={styles.main} className="h-full w-full inset-0 bg-pattern-light grid place-items-center">
+                {renderPage()}
+            </div>
             <Footer />
         </div>
     )
