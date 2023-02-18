@@ -57,12 +57,11 @@ export default function Portfolio() {
     ]
 
     return (
-        <div className="max-h-full">
+        <div class="max-h-full">
             <div class="my-10 grid grid-cols-3 grid-flow-row gap-3">
                 {projects.map(data => (
                     <ProjectCards name={data.name} description={data.description} img={data.img} github={data.github} deployed={data.deployed} />
                 ))}
-
             </div>
         </div>
     )

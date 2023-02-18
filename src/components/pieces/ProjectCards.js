@@ -40,8 +40,8 @@ export default function ProjectCards(props) {
       </CardContent>
       <ThemeProvider theme={theme}>
       <CardActions className="flex justify-center">
-        <Button color="dark" variant="contained" size="medium"><a href={props.deployed} target="_blank">Deployed App</a></Button>
-        <Button color="dark" variant="outlined" size="medium"><a href={props.github} target="_blank">Github Repo</a></Button>
+      <a href={props.deployed} target="_blank"><Button color="dark" variant="contained" size="medium">Deployed App</Button></a>
+      <a href={props.github} target="_blank"><Button color="dark" variant="outlined" size="medium">Github Repo</Button></a>
       </CardActions>
       </ThemeProvider>
     </Card>
