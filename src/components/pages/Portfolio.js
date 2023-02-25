@@ -12,42 +12,42 @@ export default function Portfolio() {
     const projects = [
         {
             name: 'Busy Bee',
-            description: 'Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here ',
+            description: "A task tracking application that let's you create a profile and set your own goals. When you close tasks you gain points called 'Honey' and earn badges on your profile. This app was created using Handlebars, Express, MySQL, Sequelize and JavaScript",
             img: busybee,
             github: 'https://github.com/JWatkins28/busy-bee',
             deployed: 'https://lit-beach-45684.herokuapp.com/'
         },
         {
             name: 'Tech Blog',
-            description: 'Enter Something HereEnter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here ',
+            description: "A tech blog where users can create a profile, create posts and leave comments on other's posts. You can view your 'Dashboard' which will show a collection of all of your posts in one place. This app was created using Handlebars, Express, MySQL, Sequelize and JavaScript" ,
             img: techblog,
             github: 'https://github.com/JWatkins28/tech-blog',
             deployed: 'https://pacific-oasis-95450.herokuapp.com/'
         },
         {
             name: 'The Movie Library',
-            description: 'Enter Something Here',
+            description: "A movie search engine that let's you search for movies and save them to your library. This uses the IMDB API to get the movie data. This app was created using JQuery, Tailwind for styling and JavaScript",
             img: movielib,
             github: 'https://github.com/JWatkins28/The-Movie-Library',
             deployed: 'https://jwatkins28.github.io/The-Movie-Library/'
         },
         {
             name: 'Javascript Quiz',
-            description: 'Enter Something Here',
+            description: 'A simple javascript quiz to test your knowledge of basic JavaScript. You can track your score on a high score list at the end of the quiz. This app was made with vanilla JavaScript and vanilla CSS for styling',
             img: jsquiz,
             github: 'https://github.com/JWatkins28/javascript-quiz',
             deployed: 'https://jwatkins28.github.io/Javascript-Quiz/'
         },
         {
             name: 'Weather Dashboard',
-            description: 'Enter Something Here',
+            description: 'A weather dashboard app that shows the 5-day forecast for any city you search for. It also shows a history of your recently searched cities. This app was created using the OpenWeatherMap API, JQuery and vanilla CSS for styling.',
             img: weather,
             github: 'https://github.com/JWatkins28/weather-dashboard',
             deployed: 'https://jwatkins28.github.io/Weather-Dashboard/'
         },
         {
             name: 'Work Day Scheduler',
-            description: 'Enter Something Here',
+            description: "A simple work-day app that let's you schedule your work day. As the hours in the day pass the hours on the app will grey out to let you know those are all in the past. This app was created using Jquery, Moment and vanilla CSS for styling.",
             img: scheduler,
             github: 'https://github.com/JWatkins28/work-day-scheduler',
             deployed: 'https://jwatkins28.github.io/Work-Day-Scheduler/'
