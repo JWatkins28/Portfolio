@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Disclosure } from '@headlessui/react'
 import { GiCastle, GiCrestedHelmet, GiDrippingSword, GiDragonBalls, GiEgyptianTemple, Gi3DHammer, GiAbstract005, GiAbstract004, GiAbstract097, GiAllSeeingEye, GiAllForOne, GiAncientRuins, GiArcingBolt, GiArmorPunch, GiAstronautHelmet, GiAudioCassette, GiAxeSwing, GiBlackball, GiBoltSpellCast, GiBoulderDash, GiBowlOfRice, GiBrasero, GiBrute, GiBullyMinion  } from 'react-icons/gi'
 
@@ -28,10 +28,10 @@ export default function NavBar({ currentPage, pageChanger }) {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   {iconChooser()}
-                  <h2 className="text-white ml-10 absolute opacity-0 md:opacity-100">Justin Watkins</h2>
+                  <h2 className="text-white ml-10 w-fit absolute right-0 md:left-0 z-0">Justin Watkins</h2>
                 </div>
                 <div className="sm:block m-auto">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 z-40">
                     {navigation.map((item) => (
                       <a
                         key={item.page}
