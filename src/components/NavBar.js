@@ -4,12 +4,12 @@ import { GiCastle, GiCrestedHelmet, GiDrippingSword, GiDragonBalls, GiEgyptianTe
 
 export default function NavBar({ currentPage, pageChanger }) {
 
-    // const iconClasses = 'className="h-8 w-auto absolute text-white"'
-    // const icons = [<GiCastle iconClasses />, <GiCrestedHelmet iconClasses />, <GiDrippingSword iconClasses />, <GiDragonBalls iconClasses />, <GiEgyptianTemple iconClasses />]
+    const iconClasses = "h-8 w-auto absolute text-white"
+    const icons = [<GiCastle className={iconClasses} />, <GiCrestedHelmet className={iconClasses} />, <GiDrippingSword className={iconClasses} />, <GiDragonBalls className={iconClasses} />, <GiEgyptianTemple className={iconClasses} />]
 
-    // const iconChooser = () => {
-    //   return icons[Math.floor(Math.random() * icons.length)]
-    // }
+    const iconChooser = () => {
+      return icons[Math.floor(Math.random() * icons.length)]
+    }
 
     const navigation = [
         { name: 'About Me', page: 'About', href: '#about'},
@@ -27,10 +27,8 @@ export default function NavBar({ currentPage, pageChanger }) {
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                    {/* LOGO (Change to something more personalized) */}
-                  <GiCastle className="h-8 w-auto absolute text-white" />
-
-                  <h2 className="text-white ml-10 absolute ">Justin Watkins</h2>
+                  {iconChooser()}
+                  <h2 className="text-white ml-10 absolute opacity-0 md:opacity-100">Justin Watkins</h2>
                 </div>
                 <div className="sm:block m-auto">
                   <div className="flex space-x-4">

@@ -39,9 +39,9 @@ export default function ProjectCards(props) {
         </Typography>
       </CardContent>
       <ThemeProvider theme={theme}>
-      <CardActions className="flex justify-center">
-      <a href={props.deployed} target="_blank"><Button color="dark" variant="contained" size="medium">Deployed App</Button></a>
-      <a href={props.github} target="_blank"><Button color="dark" variant="outlined" size="medium">Github Repo</Button></a>
+      <CardActions className="position-bottom">
+      <Button href={props.deployed} target="_blank" color="dark" variant="contained" size="medium">Deployed App</Button>
+      <a href={props.github} target="_blank"><Button href={props.github} color="dark" variant="outlined" size="medium">Github Repo</Button></a>
       </CardActions>
       </ThemeProvider>
     </Card>
