@@ -12,14 +12,14 @@ export default function Portfolio() {
     const projects = [
         {
             name: 'Busy Bee',
-            description: 'Enter Something Here',
+            description: 'Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here ',
             img: busybee,
             github: 'https://github.com/JWatkins28/busy-bee',
             deployed: 'https://lit-beach-45684.herokuapp.com/'
         },
         {
             name: 'Tech Blog',
-            description: 'Enter Something Here',
+            description: 'Enter Something HereEnter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here Enter Something Here ',
             img: techblog,
             github: 'https://github.com/JWatkins28/tech-blog',
             deployed: 'https://pacific-oasis-95450.herokuapp.com/'
@@ -57,10 +57,10 @@ export default function Portfolio() {
     ]
 
     return (
-        <div class="max-h-full">
-            <div class="my-10 grid grid-cols-3 grid-flow-row gap-3">
+        <div className="max-h-full">
+            <div className="my-10 grid grid-cols-2 md:grid-cols-3 grid-flow-row gap-3">
                 {projects.map(data => (
-                    <ProjectCards name={data.name} description={data.description} img={data.img} github={data.github} deployed={data.deployed} />
+                    <ProjectCards name={data.name} description={data.description} img={data.img} github={data.github} deployed={data.deployed} key={data.name} />
                 ))}
             </div>
         </div>
