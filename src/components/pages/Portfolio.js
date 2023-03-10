@@ -5,11 +5,18 @@ import movielib from '../../static/imgs/themovielibrary.PNG'
 import jsquiz from '../../static/imgs/javascriptquiz.PNG'
 import weather from '../../static/imgs/weatherdashboard.PNG'
 import techblog from '../../static/imgs/techblog.PNG'
-import scheduler from '../../static/imgs/scheduler.PNG'
+import ghostbusters from '../../static/imgs/Ghostbusters.PNG'
 
 export default function Portfolio() {
 
     const projects = [
+        {
+            name: 'GhostBusters',
+            description: "A dating app designed to help you find the perfect date. You can read reviews left by other users and once you match with someone you can leave a review after your date. Find your dream date today!",
+            img: ghostbusters,
+            github: 'https://github.com/aberger3647/cache-me-outside',
+            deployed: 'https://agile-peak-65135.herokuapp.com/'
+        },
         {
             name: 'Busy Bee',
             description: "A task tracking application that let's you create a profile and set your own goals. When you close tasks you gain points called 'Honey' and earn badges on your profile. This app was created using Handlebars, Express, MySQL, Sequelize and JavaScript",
@@ -45,13 +52,7 @@ export default function Portfolio() {
             github: 'https://github.com/JWatkins28/weather-dashboard',
             deployed: 'https://jwatkins28.github.io/Weather-Dashboard/'
         },
-        {
-            name: 'Work Day Scheduler',
-            description: "A simple work-day app that let's you schedule your work day. As the hours in the day pass the hours on the app will grey out to let you know those are all in the past. This app was created using Jquery, Moment and vanilla CSS for styling.",
-            img: scheduler,
-            github: 'https://github.com/JWatkins28/work-day-scheduler',
-            deployed: 'https://jwatkins28.github.io/Work-Day-Scheduler/'
-        }
+
 
 
     ]

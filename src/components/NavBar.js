@@ -31,7 +31,7 @@ export default function NavBar({ currentPage, pageChanger }) {
                   <h2 className="text-white ml-10 w-fit absolute right-0 md:left-0 z-0">Justin Watkins</h2>
                 </div>
                 <div className="sm:block m-auto">
-                  <div className="flex space-x-4 z-40">
+                  <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
                         key={item.page}
