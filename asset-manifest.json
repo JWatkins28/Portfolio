@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.17ef21d2.css",
-    "main.js": "/Portfolio/static/js/main.43814a9a.js",
+    "main.css": "/Portfolio/static/css/main.d3f5292b.css",
+    "main.js": "/Portfolio/static/js/main.6076712f.js",
     "static/media/themovielibrary.PNG": "/Portfolio/static/media/themovielibrary.919a440ecd65cfb07c03.PNG",
-    "static/media/me.jpg": "/Portfolio/static/media/me.007f4d8f8352db9317db.jpg",
+    "static/media/me.JPEG": "/Portfolio/static/media/me.ce23901d321843ebbbe7.JPEG",
     "static/media/techblog.PNG": "/Portfolio/static/media/techblog.39412ba39ab3aa0f0961.PNG",
     "static/media/weatherdashboard.PNG": "/Portfolio/static/media/weatherdashboard.99bceac445adfef552d5.PNG",
     "static/media/busybee.png": "/Portfolio/static/media/busybee.0287ee15085bdf4a2ad7.png",
     "static/media/javascriptquiz.PNG": "/Portfolio/static/media/javascriptquiz.acd1c74602ee4c9b438c.PNG",
     "static/media/Ghostbusters.PNG": "/Portfolio/static/media/Ghostbusters.4dba6f90adc03b622bfa.PNG",
     "index.html": "/Portfolio/index.html",
-    "main.17ef21d2.css.map": "/Portfolio/static/css/main.17ef21d2.css.map",
-    "main.43814a9a.js.map": "/Portfolio/static/js/main.43814a9a.js.map"
+    "main.d3f5292b.css.map": "/Portfolio/static/css/main.d3f5292b.css.map",
+    "main.6076712f.js.map": "/Portfolio/static/js/main.6076712f.js.map"
   },
   "entrypoints": [
-    "static/css/main.17ef21d2.css",
-    "static/js/main.43814a9a.js"
+    "static/css/main.d3f5292b.css",
+    "static/js/main.6076712f.js"
   ]
 }
